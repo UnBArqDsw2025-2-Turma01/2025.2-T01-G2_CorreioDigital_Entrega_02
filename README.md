@@ -1,6 +1,6 @@
 # Correio Digital
 
-![Logo](./docs/Assets/Logo.png)
+![Logo](./docs/Logo.png)
 
 BabelChat é uma plataforma que tem como objetivo conectar pessoas interessadas em praticar diferentes idiomas, oferecendo funcionalidades de criação de perfil, gerenciamento de interesses, publicação de posts, adição de amigos e um sistema de chat interativo.
 
