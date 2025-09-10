@@ -12,7 +12,7 @@ A construção do diagrama seguiu uma abordagem colaborativa, apoiada nas etapas
 
 ## Desenvolvimento
 
-*Figura 1:** Digrama de Classes  
+**Figura 1:** Digrama de Classes  
 
 ![Diagrama de classes do projeto](assets/diagrama_de_classes.png)  
 
