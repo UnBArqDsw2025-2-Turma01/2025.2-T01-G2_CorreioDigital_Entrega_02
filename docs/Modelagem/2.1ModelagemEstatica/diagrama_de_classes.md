@@ -12,11 +12,165 @@ A construção do diagrama seguiu uma abordagem colaborativa, apoiada nas etapas
 
 ## Desenvolvimento
 
-**Figura 1:** Digrama de Classes  
+**Figura 1:** Diagrama de Classes  
 
-![Diagrama de classes do projeto](assets/diagrama_de_classes.png)  
+![Diagrama de classes do projeto](../../assets/diagrama_de_classes.png)  
 
 **Autores:** [João Pedro Costa](https://github.com/johnaopedro) e [Julia Gabriela](https://github.com/JuliaGabP).  
+
+## Especificação Estendida do Diagrama de Classe
+
+### 1. **Classe `Usuário`**
+
+- **Atributos**
+  - `id: int`
+  - `nome: string`
+  - `email: string`
+  - `senha: string`
+  - `statusOnline: boolean`
+
+- **Métodos**
+  - `+ login(): void`
+  - `+ logout(): void`
+  - `+ editarBio(): void`
+  - `+ adicionarAmigo(): void`
+  - `+ removerAmigo(): void`
+
+- **Relacionamentos**
+  - Associação 1:1 com **Perfil**
+  - Associação 1:N com **Chat**
+  - Composição 1:N com **Postagem**
+  - Associação 1:N com **Conexão**
+  - Associação N:M com **SalaTematica**
+
+---
+
+### 2. **Classe `Perfil`**
+
+- **Atributos**
+  - `bio: string`
+  - `tags: List`
+  - `emoji: List`
+
+- **Métodos**
+  - `+ editarPerfil(): void`
+
+- **Relacionamentos**
+  - Associação 1:1 com **Usuário**
+
+---
+
+### 3. **Classe `Chat`**
+
+- **Atributos**
+  - `id: int`
+  - `mensagens: List`
+  - `usuarios: List`
+
+- **Métodos**
+  - `+ enviarMensagem(): void`
+  - `+ reagirMensagem(): void`
+  - `+ iniciarConversa(): void`
+  - `+ compartilharConteudo(): void`
+
+- **Relacionamentos**
+  - Associação N:M com **Usuário**
+  - Composição 1:N com **Mensagem**
+
+---
+
+### 4. **Classe `Mensagem`**
+
+- **Atributos**
+  - `id: int`
+  - `conteudo: string`
+  - `dataEnvio: datetime`
+  - `reacoes: List`
+
+- **Métodos**
+  - `+ editarMensagem(): void`
+  - `+ adicionarReacao(): void`
+
+- **Relacionamentos**
+  - Composição 1:N com **Chat**
+
+---
+
+### 5. **Classe `Postagem`**
+
+- **Atributos**
+  - `id: int`
+  - `conteudo: string`
+  - `dataPublicacao: datetime`
+  - `curtidas: int`
+  - `comentarios: List`
+
+- **Métodos**
+  - `+ criarPostagem(): void`
+  - `+ editarPostagem(): void`
+
+- **Relacionamentos**
+  - Composição 1:N com **Usuário**
+
+---
+
+### 6. **Classe `Conexão`**
+
+- **Atributos**
+  - `id: int`
+  - `status: string`
+
+- **Métodos**
+  - `+ requisitarConversa(): void`
+  - `+ aceitarConexao(): void`
+
+- **Relacionamentos**
+  - Associação 1:N com **Usuário**
+
+---
+
+### 7. **Classe `SalaTematica`**
+
+- **Atributos**
+  - `id: int`
+  - `nome: string`
+  - `descricao: string`
+  - `usuarios: List`
+
+- **Métodos**
+  - `+ entrarSala(): void`
+  - `+ sairSala(): void`
+
+- **Relacionamentos**
+  - Associação N:M com **Usuário**
+
+---
+
+### 8. **Classe de Controle (Administração)**
+
+- **Métodos**
+  - `+ bloquearUsuario(): void`
+  - `+ avaliarConversa(): void`
+  - `+ gerarRelatorio(): void`
+
+- **Relacionamentos**
+  - Associação 1:N com **Usuário**
+
+---
+
+## 9. **Resumo dos Relacionamentos**
+
+| **Entidade**     | **Entidade**     | **Relacionamento** | **Cardinalidade** | **Descrição** |
+|------------------|------------------|--------------------|-------------------|---------------|
+| Usuário          | Perfil           | Associação         | 1:1               | Cada usuário possui um perfil |
+| Usuário          | Chat             | Associação         | 1:N               | Um usuário participa de vários chats |
+| Chat             | Mensagem         | Composição         | 1:N               | Um chat contém várias mensagens |
+| Usuário          | Postagem         | Composição         | 1:N               | Um usuário pode criar várias postagens |
+| Usuário          | Conexão          | Associação         | 1:N               | Um usuário pode ter várias conexões |
+| Usuário          | SalaTematica     | Associação         | N:M               | Usuários participam de várias salas |
+| Administração    | Usuário          | Associação         | 1:N               | Administração pode aplicar ações a usuários |
+
+---
 
 ## Bibliografia  
 
@@ -24,11 +178,10 @@ Conjunto de obras consultadas.
 
 > Criar um diagrama de classe UML - Suporte da Microsoft. Disponível em: <https://support.microsoft.com/pt-br/topic/criar-um-diagrama-de-classe-uml-de6be927-8a7b-4a79-ae63-90da8f1a8a6b>.  
 
-‌
 ## Histórico de Versões
 
 | Versão |     Data    | Descrição   | Autor(es) | Revisor(es) | Detalhes da revisão | 
 | ------ | ----------- | ----------- | --------- | ----------- | --------------------|
 | `1.0`  | 09/09/2025  | Criação do documento | [Julia Gabriela](https://github.com/JuliaGabP) | - | - |
 | `1.1`  | 09/09/2025  | Criação do diagrama | [João Pedro Costa](https://github.com/johnaopedro) e [Julia Gabriela](https://github.com/JuliaGabP) | - | - |
-
+| `1.2`  | 10/09/2025  | Inclusão da especificação estendida | [João Pedro Costa](https://github.com/johnaopedro) e [Julia Gabriela](https://github.com/JuliaGabP) | - | - |
