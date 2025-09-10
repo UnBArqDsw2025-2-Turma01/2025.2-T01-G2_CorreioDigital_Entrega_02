@@ -14,7 +14,7 @@ Este repositório contém a documentação e os artefatos desenvolvidos pelo Gru
 
 ### Acessando pela Internet
 
-Para acessar a página web da nossa documentação [Clique aqui](https://unbarqdsw2025-2-turma01.github.io/2025.2-T01-G2_CorreioDigital_Entrega_01/
+Para acessar a página web da nossa documentação [Clique aqui](https://unbarqdsw2025-2-turma01.github.io/2025.2-T01-G2_CorreioDigital_Entrega_02/
 )
 
 ### Executando localmente
