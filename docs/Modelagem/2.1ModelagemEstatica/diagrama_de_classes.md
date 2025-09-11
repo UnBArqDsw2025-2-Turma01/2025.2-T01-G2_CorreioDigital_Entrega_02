@@ -42,6 +42,7 @@ A construção do diagrama seguiu uma abordagem colaborativa, apoiada nas etapas
   - Composição 1:N com **Postagem**
   - Associação 1:N com **Conexão**
   - Associação N:M com **SalaTematica**
+  - Associação 1:1 com **Gamificação**
 
 ---
 
@@ -146,7 +147,38 @@ A construção do diagrama seguiu uma abordagem colaborativa, apoiada nas etapas
 
 ---
 
-### 8. **Classe de Controle (Administração)**
+### 8. **Classe `Gamificação`**
+
+- **Atributos**
+  - `nivel: int`
+  - `pontos: int`
+
+- **Métodos**
+  - `+ adicionarPontos(): void`
+  - `+ verificarNivel(): void`
+
+- **Relacionamentos**
+  - Associação 1:1 com **Usuário**
+  - Composição 1:N com **Conquista**
+
+---
+
+### 9. **Classe `Conquista`**
+
+- **Atributos**
+  - `id: int`
+  - `nome: string`
+  - `descricao: string`
+
+- **Métodos**
+  - `+ desbloquear(): void`
+
+- **Relacionamentos**
+  - Composição 1:N com **Gamificação**
+
+---
+
+### 10. **Classe de Controle `Gerenciamento`**
 
 - **Métodos**
   - `+ bloquearUsuario(): void`
@@ -158,7 +190,7 @@ A construção do diagrama seguiu uma abordagem colaborativa, apoiada nas etapas
 
 ---
 
-## 9. **Resumo dos Relacionamentos**
+## Resumo dos Relacionamentos
 
 | **Entidade**     | **Entidade**     | **Relacionamento** | **Cardinalidade** | **Descrição** |
 |------------------|------------------|--------------------|-------------------|---------------|
@@ -168,7 +200,9 @@ A construção do diagrama seguiu uma abordagem colaborativa, apoiada nas etapas
 | Usuário          | Postagem         | Composição         | 1:N               | Um usuário pode criar várias postagens |
 | Usuário          | Conexão          | Associação         | 1:N               | Um usuário pode ter várias conexões |
 | Usuário          | SalaTematica     | Associação         | N:M               | Usuários participam de várias salas |
-| Administração    | Usuário          | Associação         | 1:N               | Administração pode aplicar ações a usuários |
+| Usuário          | Gamificação      | Associação         | 1:1               | Cada usuário possui um sistema de gamificação |
+| Gamificação      | Conquista        | Composição         | 1:N               | A gamificação gera conquistas desbloqueáveis |
+| Gerenciamento    | Usuário          | Associação         | 1:N               | Gerenciamento pode aplicar ações a usuários |
 
 ---
 
