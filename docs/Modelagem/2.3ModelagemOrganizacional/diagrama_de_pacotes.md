@@ -28,4 +28,5 @@ Conjunto de obras consultadas
 
 | Versão | Data | Descrição | Autor(es) | Revisor(es) | Detalhes da revisão |
 |--------|------|-----------|-----------|-------------|---------------------|
-| `1.0`  | 12/09/2025 | Criação do documento, inserção do diagrama | [Eric Akio](https://github.com/eric-kingu) |  |  |
+
+| `1.0`  | 12/09/2025 | Criação do documento, inserção do diagrama | [Eric Akio](https://github.com/eric-kingu) | [Julia Gabriela](https://github.com/JuliaGabP) | Revisão de ortografia e completude do documento, visto a falta do diagrama que outro integrante desenvolveu |
