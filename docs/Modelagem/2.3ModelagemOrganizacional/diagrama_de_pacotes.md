@@ -8,7 +8,9 @@ O diagrama de pacotes é uma ferramenta da UML responsável por descrever como o
 
 Haja vista que esse diagrama trata-se de uma variação do diagrama de classes, ele permite uma visualização clara do sistema, mas é mais conciso, representando uma visão em módulos. Por meio dele, foi representado elementos como o próprio site, a interface de usuário e os módulos dentro dele, assim como pacotes de segurança e de dados, cada um com suas divisões, módulos internos e dependências.
 
-O diagrama de pacotes foi construído de forma colaborativa, a partir do estudo teórico e do levantamento de requisitos. Os conceitos centrais do sistema foram analisados com apoio de brainstorming e rich pictures, permitindo a definição dos principais módulos e de suas responsabilidades, bem como a organização de suas inter-relações.
+O diagrama de pacotes foi construído de forma colaborativa, a partir do estudo teórico e do levantamento de requisitos. Os conceitos centrais do sistema foram analisados com apoio de brainstorming e rich pictures, permitindo a definição dos principais módulos e de suas responsabilidades, bem como a organização de suas inter-relações. 
+
+Nesse documento serão apresentados dois diagramas, pois a dupla [Esther Sena](https://github.com/esmsena) e [Mariiana Neris](https://github.com/Maryyscreuza), e o aluno [Eric Akio](https://github.com/eric-kingu) fizeram um diagrama cada. Após isso, foi realizada uma enquete no grupo de Whatsapp que o 
 
 ## Desenvolvimento
 
