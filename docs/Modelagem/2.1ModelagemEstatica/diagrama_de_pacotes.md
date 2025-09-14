@@ -10,6 +10,9 @@ Haja vista que esse diagrama trata-se de uma variação do diagrama de classes, 
 
 O diagrama de pacotes foi construído de forma colaborativa, a partir do estudo teórico e do levantamento de requisitos. Os conceitos centrais do sistema foram analisados com apoio de brainstorming e rich pictures, permitindo a definição dos principais módulos e de suas responsabilidades, bem como a organização de suas inter-relações. 
 
+Nesse documento serão apresentados dois diagramas, pois a dupla [Esther Sena](https://github.com/esmsena) e [Mariiana Neris](https://github.com/Maryyscreuza), e o aluno [Eric Akio](https://github.com/eric-kingu) fizeram um diagrama cada. Após isso, foi realizada uma enquete no grupo de Whatsapp que o 
+O diagrama de pacotes foi construído de forma colaborativa, a partir do estudo teórico e do levantamento de requisitos. Os conceitos centrais do sistema foram analisados com apoio de brainstorming e rich pictures, permitindo a definição dos principais módulos e de suas responsabilidades, bem como a organização de suas inter-relações. 
+
 Nesse documento serão apresentados dois diagramas, pois a dupla [Esther Sena](https://github.com/esmsena) e [Mariiana Neris](https://github.com/Maryyscreuza), e o aluno [Eric Akio](https://github.com/eric-kingu) fizeram um diagrama cada. Após isso, foi realizada uma enquete no grupo de Whatsapp da organização do grupo para decidir o diagrama que será seguido e o diagrama da dupla foi escolhido.
 
 ## Desenvolvimento
@@ -38,4 +41,4 @@ Conjunto de obras consultadas
 |--------|------|-----------|-----------|-------------|---------------------|
 
 | `1.0`  | 12/09/2025 | Criação do documento, inserção do diagrama | [Eric Akio](https://github.com/eric-kingu) | [Julia Gabriela](https://github.com/JuliaGabP) | Revisão de ortografia e completude do documento, visto a falta do diagrama que outro integrante desenvolveu |
-|| `1.1` | 14/09/2025 | inserção de outro diagrama | [Esther Sena](https://github.com/esmsena) e [Mariiana Neris](https://github.com/Maryyscreuza) |  |  |
+| `1.1` | Criação de outro diagrama | [Esther Sena](https://github.com/esmsena) e [Mariiana Neris](https://github.com/Maryyscreuza) |  |  |
