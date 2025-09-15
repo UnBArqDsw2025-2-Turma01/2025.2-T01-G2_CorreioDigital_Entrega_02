@@ -216,6 +216,6 @@ Conjunto de obras consultadas.
 
 | Versão |     Data    | Descrição   | Autor(es) | Revisor(es) | Detalhes da revisão | 
 | ------ | ----------- | ----------- | --------- | ----------- | --------------------|
-| `1.0`  | 09/09/2025  | Criação do documento | [Julia Gabriela](https://github.com/JuliaGabP) | - | - |
+| `1.0`  | 09/09/2025  | Criação do documento | [Julia Gabriela](https://github.com/JuliaGabP) | [João Pedro Costa](https://github.com/johnaopedro) | O diagrama estava com um pedaço na imagem cortado |
 | `1.1`  | 09/09/2025  | Criação do diagrama | [João Pedro Costa](https://github.com/johnaopedro) e [Julia Gabriela](https://github.com/JuliaGabP) | - | - |
 | `1.2`  | 10/09/2025  | Inclusão da especificação estendida | [João Pedro Costa](https://github.com/johnaopedro) e [Julia Gabriela](https://github.com/JuliaGabP) | - | - |
