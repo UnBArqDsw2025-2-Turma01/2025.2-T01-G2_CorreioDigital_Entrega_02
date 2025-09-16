@@ -6,10 +6,10 @@ O **Diagrama de Atividades** é um dos diagramas da **UML (Unified Modeling Lang
 Ele mostra **ações, decisões, paralelismos e fluxos de controle**, permitindo visualizar **como o trabalho é executado** desde o início até a conclusão.  
 
 Esse tipo de diagrama é especialmente útil para:  
-- 📌 **Modelar processos de negócio** e rotinas organizacionais;  
-- 📌 **Descrever o comportamento de casos de uso**;  
-- 📌 **Representar algoritmos ou fluxos de sistema**;  
-- 📌 **Identificar pontos de decisão e atividades paralelas**.  
+- **Modelar processos de negócio e rotinas organizacionais**;  
+- **Descrever o comportamento de casos de uso**;  
+- **Representar algoritmos ou fluxos de sistema**;  
+- **Identificar pontos de decisão e atividades paralelas**.  
 
 Em resumo, o diagrama de atividades ajuda a compreender **o passo a passo das ações** e facilita a comunicação entre desenvolvedores, analistas e usuários, já que apresenta de forma **visual e intuitiva** a lógica do processo.
 
@@ -101,3 +101,4 @@ A tabela a seguir apresenta os principais elementos da UML aplicados nos diagram
 | `1.0` | 15/09/2025 | Criação esqueleto do documento | [Pedro Ferreira Gondim](https://github.com/G0ndim) | [Túlio Augusto Celeri](https://github.com/TulioCeleri) | O esqueleto do documento foi criado corretamente |
 | `1.1` | 15/09/2025 | Adição dos diagramas de atividades | [Pedro Ferreira Gondim](https://github.com/G0ndim) e [Túlio Augusto Celeri](https://github.com/TulioCeleri) | - | - |
 | `1.2` | 15/09/2025 | Adição da introdução e metodologia | [Pedro Ferreira Gondim](https://github.com/G0ndim) e [Túlio Augusto Celeri](https://github.com/TulioCeleri) | - | - |
+| `1.3` | 16/09/2025 | Alterações na Introdução | [Pedro Ferreira Gondim](https://github.com/G0ndim) e [Túlio Augusto Celeri](https://github.com/TulioCeleri) | - | - |
