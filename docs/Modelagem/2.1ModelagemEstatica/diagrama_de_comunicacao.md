@@ -108,9 +108,11 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 5. ControladorGamificacao -> Conquista: `desbloquearConquista(level)`
 6. Conquista -> InterfaceApp: `mostrarConquista("Você desbloqueou a medalha X!")`
 
-**Diagrama de Comunicação**:
+**Figura 3:** Diagrama de Comunicação de Gameficação
 
 ![Diagrama de Comunicação - Gameficação](../../assets/DiagramaComunicacao_Gameficacao.jpeg)
+
+**Autora:** [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) 
 
 ---
 
@@ -137,9 +139,11 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 5. ControladorChat -> UsuarioDestino: `entregarMensagem("Oi")`
 6. UsuarioB -> InterfaceChat: `exibirMensagem("Oi")`
 
-**Diagrama de Comunicação**:
+**Figura 4:** Diagrama de Comunicação de Chat
 
 ![Diagrama de Comunicação - Chat](../../assets/DiagramaComunicacao_Chat.jpeg)
+
+**Autora:** [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) 
 
 ---
 
@@ -201,3 +205,4 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 |--------|-----------|-----------------------------|-----------|-------------|----------|
 | `1.0`  | 16/09/2025 | Criação inicial do documento e Criação e evolução do documento com inclusão progressiva dos cenários de Curtida, Bloqueio de Usuário, Gamificação e Notificação de Mensagem, incluindo fluxos, diagramas e consolidação da especificação de pacotes e componentes com suas relações principais. |[Esther Sena](https://github.com/esmsena) | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | Estrutura inicial, correção de alguns erros ortográficos |
 | `1.1`  | 16/09/2025 | Atualização do documento com inclusão dos cenários arrumados de Gamificação e Chat/Envio de mensagem, incluindo fluxos, diagramas e consolidação da especificação de pacotes e componentes com suas relações principais, além disso arrumando o caminho de imagens de Gameficação e Chat. | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | [Esther Sena](https://github.com/esmsena) |  |
+| `1.2`  | 16/09/2025 | Atualização arrumando o caminho de imagens de Gameficação e Chat e adicionando legenda e autora de ambos. | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | [Esther Sena](https://github.com/esmsena) |  |
