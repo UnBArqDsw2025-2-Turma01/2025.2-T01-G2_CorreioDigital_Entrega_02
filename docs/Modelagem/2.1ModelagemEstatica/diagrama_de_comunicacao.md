@@ -52,11 +52,12 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 4. ControladorMensagem → InterfaceGrupo: `atualizarCurtidaVisual(Mensagem, "👍")`
 5. ControladorMensagem → Notificacao: `notificarAutor(Mensagem, "Seu post recebeu uma Curtida!")`
 
-**Diagrama de Comunicação**:
+**Figura 1:** Diagrama de Usuário curte menssagem
 
-![DIAGRAMA DE COMUNICAÇÃO] (../img/.jpg)
+![Diagrama de Comunicação - Usuário curte menssagem](../../assets/DiagramaComunicacao_CurtidaComentario.jpeg)
 
----
+**Autora:** [Esther Sena](https://github.com/esmsena) 
+
 
 ## Cenário 2: Bloquear um usuário
 
@@ -79,9 +80,11 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 3. ControladorSeguranca → BancoDeDados: `registrarBloqueio(Usuario1, Usuario2)`
 4. ControladorSeguranca → InterfacePerfil: `confirmarBloqueio()`
 
-**Diagrama de Comunicação**:
+**Figura 2:** Diagrama de Usuário Bloqueia outro Usuário
 
-![DIAGRAMA DE COMUNICAÇÃO] (../img/.jpg)
+![Diagrama de Comunicação - Usuário Bloqueia outro Usuário](../../assets/DiagramaComunicacao_BloqueiodeUsuario.jpeg)
+
+**Autora:** [Esther Sena](https://github.com/esmsena) 
 
 ---
 
@@ -203,6 +206,7 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 
 | Versão | Data       | Descrição  | Autor(es) | Revisor(es) | Detalhes  da revisão |
 |--------|-----------|-----------------------------|-----------|-------------|----------|
-| `1.0`  | 16/09/2025 | Criação inicial do documento e Criação e evolução do documento com inclusão progressiva dos cenários de Curtida, Bloqueio de Usuário, Gamificação e Notificação de Mensagem, incluindo fluxos, diagramas e consolidação da especificação de pacotes e componentes com suas relações principais. |[Esther Sena](https://github.com/esmsena) | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | Estrutura inicial, correção de alguns erros ortográficos |
-| `1.1`  | 16/09/2025 | Atualização do documento com inclusão dos cenários arrumados de Gamificação e Chat/Envio de mensagem, incluindo fluxos, diagramas e consolidação da especificação de pacotes e componentes com suas relações principais, além disso arrumando o caminho de imagens de Gameficação e Chat. | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | [Esther Sena](https://github.com/esmsena) |  |
-| `1.2`  | 16/09/2025 | Atualização arrumando o caminho de imagens de Gameficação e Chat e adicionando legenda e autora de ambos. | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | [Esther Sena](https://github.com/esmsena) |  |
+| `1.0`  | 16/09/2025 | Criação inicial do documento e Criação e evolução do documento com inclusão progressiva dos cenários de Curtida, Bloqueio de Usuário, Gamificação e Notificação de Mensagem, incluindo fluxos, diagramas e consolidação da especificação de pacotes e componentes com suas relações principais e adicionando bibliografia. |[Esther Sena](https://github.com/esmsena) | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | Estrutura inicial, correção de alguns erros ortográficos |
+| `1.1`  | 16/09/2025 | Atualização do documento com inclusão dos cenários arrumados de Gamificação e Chat/Envio de mensagem, incluindo fluxos, diagramas e consolidação da especificação de pacotes e componentes com suas relações principais, além disso arrumando o caminho de imagens de Gameficação e Chat. | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | [Esther Sena](https://github.com/esmsena) | Revisado, e corrigido um erro de espaçamento. |
+| `1.2`  | 16/09/2025 | Atualização arrumando o caminho de imagens de Gameficação e Chat e adicionando legenda e autora de ambos. | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | [Esther Sena](https://github.com/esmsena) | Revisado. |
+| `1.3`  | 16/09/2025 | Adicionando imagens e responsávéis pelo cenário 1 e 2 de acordo com os outros cenários adicionados |[Esther Sena](https://github.com/esmsena) | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) |  |
