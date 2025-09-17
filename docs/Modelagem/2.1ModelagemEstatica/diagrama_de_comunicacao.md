@@ -110,7 +110,7 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 
 **Diagrama de Comunicação**:
 
-![Diagrama de Comunicação - Gameficação](../img/DiagramaComunicacao_Gameficacao.jpeg)
+![Diagrama de Comunicação - Gameficação](../../assets/DiagramaComunicacao_Gameficacao.jpeg)
 
 ---
 
@@ -139,7 +139,7 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 
 **Diagrama de Comunicação**:
 
-![Diagrama de Comunicação - Chat](../img/DiagramaComunicacao_Chat.jpeg)
+![Diagrama de Comunicação - Chat](../../assets/DiagramaComunicacao_Chat.jpeg)
 
 ---
 
