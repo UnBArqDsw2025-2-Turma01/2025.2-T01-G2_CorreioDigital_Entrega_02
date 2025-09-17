@@ -6,10 +6,10 @@ O diagrama de comunicação (communication diagram) mostra como os objetos inter
 
 Este documento apresenta quatro cenários, cada um com seu respectivo diagrama de comunicação:
 
-1. Usuário Curti Mensagem
-2. Usuário Envia Mensagem de Texto
-3. Usuário Bloqueia outro Usuário
-4. Gameficação do Aplicativo com Usuário
+1. Usuário curte mensagem
+2. Usuário envia mensagem de texto
+3. Usuário bloqueia outro usuário
+4. Usuário sobe de nível e desbloqueia conquista
 
 ---
 
@@ -29,7 +29,7 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 ---
 
 
-## Cenário 1: Usuário Reage com Emoticon
+## Cenário 1: Usuário reage com emoticon
 
 **Descrição**: Um usuário visualiza uma mensagem em um grupo e reage com uma curtida (👍). A reação é registrada, exibida para todos os participantes e o autor da mensagem é notificado.
 
@@ -58,7 +58,7 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 
 ---
 
-## Cenário 2: Bloquear um Usuário
+## Cenário 2: Bloquear um usuário
 
 **Descrição**: Um usuário decide bloquear outro usuário. O bloqueio é registrado no sistema e confirmado na interface do usuário que realizou a ação.
 
@@ -85,9 +85,9 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 
 ---
 
-## Cenário 3: Sistema de Gamificação
+## Cenário 3: Usuário sobe de nível e desbloqueia conquista
 
-**Descrição**: Um usuário conclui uma atividade no aplicativo. A pontuação é registrada, o ranking é atualizado e a nova pontuação é exibida ao usuário.
+**Descrição**: Um usuário conclui uma atividade no aplicativo. A pontuação é registrada, se ele subir de nível, ele desbloqueia uma conquista e retorna uma mensagem ao usuário.
 
 **Participantes**:
 
@@ -96,26 +96,27 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 | Ator         | Usuario                          |
 | Interface    | InterfaceApp (UI)                |
 | Backend      | ControladorGamificacao           |
-| Persistência | AgenteDeDadosGamificacao (Dados) |
-| Informação   | Ranking (Gamificação)            |
+| Persistência | BancoDeDadosGamificacao (Dados)  |
+| Informação   | Conquista (Gamificação)          |
 
 **Fluxo de mensagens**:
 
-1. Usuario → InterfaceApp: `concluirAtividade()`
-2. InterfaceApp → ControladorGamificacao: `registrarPontos()`
-3. ControladorGamificacao → AgenteDeDadosGamificacao: `atualizarPontuacao()`
-4. ControladorGamificacao → Ranking: `recalcularPosicao()`
-5. ControladorGamificacao → InterfaceApp: `mostrarNovaPontuacao()`
+1. Usuario -> InterfaceApp: `concluirAtividade()`
+2. InterfaceApp -> ControladorGamificacao: `registrarPontos()`
+3. ControladorGamificacao -> AgenteDeDadosGamificacao: `atualizarPontuacao()`
+4. BancoDeDadosGamificacao -> ControladorGamificacao: `informarNovoLevel()`
+5. ControladorGamificacao -> Conquista: `desbloquearConquista(level)`
+6. Conquista -> InterfaceApp: `mostrarConquista("Você desbloqueou a medalha X!")`
 
 **Diagrama de Comunicação**:
 
-![DIAGRAMA DE COMUNICAÇÃO] (../img/.jpg)
+![Diagrama de Comunicação - Gameficação](../img/DiagramaComunicacao_Gameficacao.jpeg)
 
 ---
 
-## Cenário 4: Notificação de Nova Mensagem
+## Cenário 4: Usuário envia mensagem no chat
 
-**Descrição**: Um usuário envia uma mensagem para outro usuário. A mensagem é salva no banco de dados e o destinatário recebe uma notificação em tempo real.
+**Descrição**: Um usuário envia uma mensagem para outro usuário. A mensagem é salva no banco de dados e o destinatário recebe a mensagem em tempo real.
 
 **Participantes**:
 
@@ -123,20 +124,22 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 | ------------------- | -------------------------------------- |
 | Ator (Remetente)    | UsuarioA                               |
 | Ator (Destinatário) | UsuarioB                               |
-| Informação          | Mensagem (Comunicação)                 |
+| Backend             | ControladorChat                        |
 | Persistência        | BancoDeDados                           |
-| Notificação         | SistemaDeNotificacoes (Infraestrutura) |
+| Informação          | Mensagem (Comunicação)                 |
 
 **Fluxo de mensagens**:
 
-1. UsuarioA → Mensagem: `enviar("Oi!")`
-2. Mensagem → BancoDeDados: `salvarMensagem()`
-3. BancoDeDados → SistemaDeNotificacoes: `novaMensagem(UsuarioB)`
-4. SistemaDeNotificacoes → UsuarioB: `pushNotification("Você recebeu uma mensagem!")`
+1. UsuarioA -> InterfaceChat: `digitaMensagem("Oi")`
+2. InterfaceChat -> ControladorChat: `enviarMensagem("Oi")`
+3. ControladorChat -> Mensagem: `criar()`
+4. Mensagem -> BancoDeDados: `persistir()`
+5. ControladorChat -> UsuarioDestino: `entregarMensagem("Oi")`
+6. UsuarioB -> InterfaceChat: `exibirMensagem("Oi")`
 
 **Diagrama de Comunicação**:
 
-![DIAGRAMA DE COMUNICAÇÃO] (../img/.jpg)
+![Diagrama de Comunicação - Chat](../img/DiagramaComunicacao_Chat.jpeg)
 
 ---
 
@@ -154,17 +157,16 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 * **ControladorSeguranca**: Gerencia ações de segurança e moderação, como bloqueio de usuários.
 * **ControladorGamificacao**: Gerencia pontuação, atividades concluídas e atualização do ranking.
 * **Mensagem**: Representa o conteúdo das mensagens enviadas entre usuários.
-* **Ranking**: Mantém a posição e pontuação dos usuários no sistema de gamificação.
+* **Conquista**: Representa a conquista do usuário no sistema de gamificação ao subir de nível.
 
 ### Pacote **Dados**
 
 * **BancoDeDados**: Persistência de curtidas, bloqueios, mensagens e pontuações.
-* **AgenteDeDadosGamificacao**: Armazena pontuação e histórico de atividades gamificadas.
+* **BancoDeDadosGamificacao**: Armazena pontuação e histórico de atividades gamificadas.
 
 ### Pacote **Infraestrutura**
 
 * **Notificacao**: Envia alertas aos usuários, como notificações de novas mensagens ou curtidas.
-* **SistemaDeNotificacoes**: Envia notificações push para usuários destinatários de mensagens.
 
 ---
 
@@ -180,12 +182,11 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 | ControladorSeguranca   | BancoDeDados             | Registra o bloqueio entre usuários.                            |
 | ControladorSeguranca   | InterfacePerfil          | Confirma bloqueio realizado.                                   |
 | InterfaceApp           | ControladorGamificacao   | Informa conclusão de atividades e solicita registro de pontos. |
-| ControladorGamificacao | AgenteDeDadosGamificacao | Atualiza pontuação do usuário.                                 |
-| ControladorGamificacao | Ranking                  | Recalcula posições no ranking de usuários.                     |
-| ControladorGamificacao | InterfaceApp             | Mostra nova pontuação ao usuário.                              |
+| ControladorGamificacao | BancoDeDadosGamificacao  | Atualiza pontuação do usuário.                                 |
+| BancoDeDadosGamificacao| ControladorGamificacao   | Informa o novo level do usuário (se houver mudança).           |
+| Conquista              | InterfaceApp             | Mostra nova conquista ao usuário.                              |
 | UsuarioA / Mensagem    | BancoDeDados             | Persiste mensagens enviadas.                                   |
-| BancoDeDados           | SistemaDeNotificacoes    | Notifica destinatário sobre nova mensagem.                     |
-| SistemaDeNotificacoes  | UsuarioB                 | Envia push notification sobre nova mensagem recebida.          |
+| BancoDeDados           | InterfaceApp             | Exibe nova mensagem ao destinatário.                           |
 
 
 ---
@@ -196,6 +197,7 @@ O Diagrama de Comunicação, também chamado de Diagrama de Colaboração, foi u
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição  | Autor(es) | Revisor(es) | Detalhes |
+| Versão | Data       | Descrição  | Autor(es) | Revisor(es) | Detalhes  da revisão |
 |--------|-----------|-----------------------------|-----------|-------------|----------|
-| `1.0`  | 16/09/2025 | Criação inicial do documento e Criação e evolução do documento com inclusão progressiva dos cenários de Curtida, Bloqueio de Usuário, Gamificação e Notificação de Mensagem, incluindo fluxos, diagramas e consolidação da especificação de pacotes e componentes com suas relações principais. |[Esther Sena](https://github.com/esmsena) | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | Estrutura inicial |
+| `1.0`  | 16/09/2025 | Criação inicial do documento e Criação e evolução do documento com inclusão progressiva dos cenários de Curtida, Bloqueio de Usuário, Gamificação e Notificação de Mensagem, incluindo fluxos, diagramas e consolidação da especificação de pacotes e componentes com suas relações principais. |[Esther Sena](https://github.com/esmsena) | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | Estrutura inicial, correção de alguns erros ortográficos |
+| `1.1`  | 16/09/2025 | Atualização do documento com inclusão dos cenários arrumados de Gamificação e Chat/Envio de mensagem, incluindo fluxos, diagramas e consolidação da especificação de pacotes e componentes com suas relações principais, além disso arrumando o caminho de imagens de Gameficação e Chat. | [Mariiana Siqueira Neris](https://github.com/Maryyscreuza) | [Esther Sena](https://github.com/esmsena) |  |
