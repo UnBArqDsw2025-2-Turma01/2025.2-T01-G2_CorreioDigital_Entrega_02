@@ -75,4 +75,4 @@ Conjunto de obras consultadas.
 | Versão |     Data    | Descrição   | Autor(es) | Revisor(es) | Detalhes da revisão | 
 | ------ | ----------- | ----------- | --------- | ----------- | --------------------|
 | `1.0`  | 17/09/2025  | Criação do documento | [Julia Gabriela](https://github.com/JuliaGabP) | - | - |
-| `1.0`  | 12/09/2025  | Criação do diagrama | [Túlio](https://github.com/TulioCeleri) e [Pedro](https://github.com/G0ndim) | - | - |
+| `1.1`  | 12/09/2025  | Criação do diagrama | [Túlio](https://github.com/TulioCeleri) e [Pedro](https://github.com/G0ndim) | - | - |
