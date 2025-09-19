@@ -18,7 +18,7 @@ A elaboração do diagrama de caso de uso destinado ao **Moderador** foi conduzi
 
 **Figura 1:** Diagrama de casos de uso do administrador
 
-![Diagrama Caso de Uso do Moderador]()
+![Diagrama Caso de Uso do Moderador](../../assets/diagrama_administrador.png)
 
 **Autores:** [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Erick Akio](https://github.com/eric-kingu)
 </center>
@@ -35,3 +35,4 @@ A elaboração do diagrama de caso de uso destinado ao **Moderador** foi conduzi
 | ------ | ----------- | ----------- | --------- | ----------- | --------------------|
 | `1.0` | 19/09/2025 | Criação esqueleto do documento | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Erick Akio](https://github.com/eric-kingu) | - | - |
 | `1.1` | 19/09/2025 | Adição da Introdução e Metodologia | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Erick Akio](https://github.com/eric-kingu) | - | - |
+| `1.2` | 19/09/2025 | Adição do Diagrama de Administrador | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Erick Akio](https://github.com/eric-kingu) | - | - |
