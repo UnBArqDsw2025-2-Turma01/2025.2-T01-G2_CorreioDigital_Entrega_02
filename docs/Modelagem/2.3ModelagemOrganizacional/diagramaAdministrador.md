@@ -20,19 +20,37 @@ A elaboração do diagrama de caso de uso destinado ao **Moderador** foi conduzi
 
 ![Diagrama Caso de Uso do Moderador](../../assets/diagrama_administrador.png)
 
-**Autores:** [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Erick Akio](https://github.com/eric-kingu)
+**Autores:** [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu)
 </center>
 
 
 ### Fluxos Principais
 
-
+1. Autenticação (Login)
+    - Acesso à tela inicial → Escolha a opção "Login"
+    - **Login:** Insere credenciais → Sistema valida → Acesso às ferramentas de administrador.
+2. Gerência de usuários
+    - Bloquear um usuário.
+    - Desbloquear um usuário.
+    - Excluir uma conta.
+3. Gerência de conteúdo
+    - Excluir uma conta.
+    - Revisar uma postagem → Excluir uma postagem.
+4. Gerência de relatórios
+    - Receber uma denúncia → Avaliar uma denúncia.
+    - Tomar uma ação:
+      - Arquivar uma denúncia.
+      - Dar um aviso ao usuário.
+      - Bloquear um usuário.
+5. Monitoramento de conversas
+    - Visualizar o histórico de mensagens denunciadas → Bloquear mensagens.
 
 
 ## **Histórico de Versão**
 
 | Versão |     Data    | Descrição   | Autor(es) | Revisor(es) | Detalhes da revisão | 
 | ------ | ----------- | ----------- | --------- | ----------- | --------------------|
-| `1.0` | 19/09/2025 | Criação esqueleto do documento | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Erick Akio](https://github.com/eric-kingu) | - | - |
-| `1.1` | 19/09/2025 | Adição da Introdução e Metodologia | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Erick Akio](https://github.com/eric-kingu) | - | - |
-| `1.2` | 19/09/2025 | Adição do Diagrama de Administrador | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Erick Akio](https://github.com/eric-kingu) | - | - |
+| `1.0` | 19/09/2025 | Criação esqueleto do documento | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
+| `1.1` | 19/09/2025 | Adição da Introdução e Metodologia | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
+| `1.2` | 19/09/2025 | Adição do Diagrama de Administrador | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
+| `1.3` | 20/09/2025 | Adição do fluxo principal de usuário | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
