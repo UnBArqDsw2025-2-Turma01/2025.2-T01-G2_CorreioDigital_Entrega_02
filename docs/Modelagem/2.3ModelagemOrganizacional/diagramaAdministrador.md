@@ -46,6 +46,10 @@ A elaboração do diagrama de caso de uso destinado ao **administrador** foi con
     - Visualizar o histórico de mensagens denunciadas → Bloquear mensagens.
 
 
+## **Referências Bibliográficas**
+
+- LUCIDCHART. **Diagrama de caso de uso UML: O que é, como fazer e exemplos**. Lucidchart, 2025. Disponível em: https://www.lucidchart.com/pages/pt/diagrama-de-caso-de-uso-uml. Acesso em: 21 set. 2025.
+
 ## **Histórico de Versão**
 
 | Versão |     Data    | Descrição   | Autor(es) | Revisor(es) | Detalhes da revisão | 
@@ -54,3 +58,4 @@ A elaboração do diagrama de caso de uso destinado ao **administrador** foi con
 | `1.1` | 19/09/2025 | Adição da Introdução e Metodologia | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
 | `1.2` | 19/09/2025 | Adição do Diagrama de Administrador | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
 | `1.3` | 20/09/2025 | Adição do fluxo principal de usuário | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
+| `1.4` | 21/09/2025 | Adição das Referências Bibliográficas | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
