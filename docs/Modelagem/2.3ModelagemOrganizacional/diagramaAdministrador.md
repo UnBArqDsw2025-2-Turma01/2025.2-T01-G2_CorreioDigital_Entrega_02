@@ -1,0 +1,61 @@
+# Diagrama de Casos de Uso - Administrador
+
+# **Introdução**
+
+O diagrama de caso de uso a seguir apresenta as interações específicas do ator administrador com o sistema, destacando as responsabilidades atribuídas a esse perfil dentro da plataforma. Seu objetivo é representar, de forma clara e estruturada, as funcionalidades destinadas à mediação e manutenção do ambiente, como o gerenciamento de usuários, de conteúdos e de denúncias, além do monitoramento de conversas reportadas. A modelagem evidencia a utilização de relações de include, para indicar ações que fazem parte do fluxo principal, e de extend, para representar comportamentos condicionais que ocorrem em situações específicas. Dessa forma, o diagrama contribui para a compreensão das regras de negócio relacionadas ao papel do administrador, servindo como base para a definição e implementação de mecanismos de controle e segurança da aplicação.
+
+## **Metodologia**
+
+A elaboração do diagrama de caso de uso destinado ao **administrador** foi conduzida por meio da análise dos requisitos funcionais da plataforma, que haviam sido levantados anteriormente. Inicialmente, foram identificados os atores do sistema a partir da análise dos papéis previstos no contexto de uso, considerando tanto os usuários finais quanto aqueles responsáveis pela administração e moderação do ambiente. Em seguida, realizou-se a especificação das ações atribuídas ao ator administrador, tomando como referência as regras de negócio previamente definidas, como o gerenciamento de usuários, conteúdos, denúncias e conversas.
+
+## **Diagrama de Caso de Uso**
+
+
+
+### Diagrama Específico: Administrador
+
+<center>
+
+**Figura 1:** Diagrama de casos de uso do administrador
+
+![Diagrama Caso de Uso do administrador](../../assets/diagrama_administrador.png)
+
+**Autores:** [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu)
+</center>
+
+
+### Fluxos Principais
+
+1. Autenticação (Login)
+    - Acesso à tela inicial → Escolha a opção "Login"
+    - **Login:** Insere credenciais → Sistema valida → Acesso às ferramentas de administrador.
+2. Gerência de usuários
+    - Bloquear um usuário.
+    - Desbloquear um usuário.
+    - Excluir uma conta.
+3. Gerência de conteúdo
+    - Excluir uma conta.
+    - Revisar uma postagem → Excluir uma postagem.
+4. Gerência de relatórios
+    - Receber uma denúncia → Avaliar uma denúncia.
+    - Tomar uma ação:
+      - Arquivar uma denúncia.
+      - Dar um aviso ao usuário.
+      - Bloquear um usuário.
+5. Monitoramento de conversas
+    - Visualizar o histórico de mensagens denunciadas → Bloquear mensagens.
+
+
+## **Referências Bibliográficas**
+
+- LUCIDCHART. **Diagrama de caso de uso UML: O que é, como fazer e exemplos**. Lucidchart, 2025. Disponível em: https://www.lucidchart.com/pages/pt/diagrama-de-caso-de-uso-uml. Acesso em: 21 set. 2025.
+
+## **Histórico de Versão**
+
+| Versão |     Data    | Descrição   | Autor(es) | Revisor(es) | Detalhes da revisão | 
+| ------ | ----------- | ----------- | --------- | ----------- | --------------------|
+| `1.0` | 19/09/2025 | Criação esqueleto do documento | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
+| `1.1` | 19/09/2025 | Adição da Introdução e Metodologia | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
+| `1.2` | 19/09/2025 | Adição do Diagrama de Administrador | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
+| `1.3` | 20/09/2025 | Adição do fluxo principal de usuário | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
+| `1.4` | 21/09/2025 | Adição das Referências Bibliográficas | [Pedro Gondim](https://github.com/G0ndim), [Túlio Celeri](https://github.com/TulioCeleri) e [Eric Akio](https://github.com/eric-kingu) | - | - |
